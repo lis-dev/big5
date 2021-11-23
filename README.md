@@ -2,6 +2,9 @@
 
 The project implements a website with a quiz: 120 questions of [The Big Five Test](https://en.wikipedia.org/wiki/Big_Five_personality_traits) and summary.
 
+## Live demo
+The website is hosted on the Github pages at [https://bigfive.top/](https://bigfive.top/)
+
 ## Sources
 - [Questions](https://github.com/Alheimsins/b5-johnson-120-ipip-neo-pi-r)
 - [Result Texts](https://github.com/Alheimsins/b5-result-text)
@@ -22,3 +25,6 @@ All supported languages can be found on https://github.com/lis-dev/big5-data/tre
 - [Tailwind](https://tailwindcss.com)
 - [Kutty](https://kutty.netlify.app/docs/)
 - [Vatio](https://github.com/pmndrs/valtio/)
+
+## Deployment
+For deploying to Github Pages run `yarn deploy`
