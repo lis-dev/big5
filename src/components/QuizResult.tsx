@@ -86,7 +86,7 @@ export class QuizResult extends Component<Props, State> {
       return (
         <div
           key={data.domain}
-          className="card w-2/3 mx-auto rounded-r-xl sm:rounded-xl overflow-hidden flex p-8 mb-8"
+          className="card md:w-2/3 mx-auto rounded-r-xl sm:rounded-xl overflow-hidden flex p-8 mb-8"
         >
           <div className="card-header">
             <div className="font-semibold text-gray-900">{data.title}</div>

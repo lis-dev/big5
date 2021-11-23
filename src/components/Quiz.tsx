@@ -85,17 +85,13 @@ export class Quiz extends Component<Props, State> {
     let currentChoices = this.state.choices[this.state.currentQuestion.keyed]
 
     return (
-      <div>
-        <div className="items-center justify-center">
-          <QuestionCard
-            question={this.state.currentQuestion}
-            choices={currentChoices}
-            onAnswer={this.onAnswer}
-            number={this.state.currentQuestionNumber + 1}
-            totalNumber={this.state.questions.length}
-          ></QuestionCard>
-        </div>
-      </div>
+      <QuestionCard
+        question={this.state.currentQuestion}
+        choices={currentChoices}
+        onAnswer={this.onAnswer}
+        number={this.state.currentQuestionNumber + 1}
+        totalNumber={this.state.questions.length}
+      ></QuestionCard>
     )
   }
 
