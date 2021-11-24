@@ -5,6 +5,12 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { Base } from './components/Base'
 import { ErrorBoundary } from './components/ErrorBoundary'
+import ReactGA from 'react-ga4'
+
+if (process.env.REACT_APP_GTM_ID) {
+  ReactGA.initialize(process.env.REACT_APP_GTM_ID)
+  ReactGA.send('pageview')
+}
 
 ReactDOM.render(
   <React.StrictMode>
