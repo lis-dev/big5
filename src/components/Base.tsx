@@ -1,9 +1,10 @@
 import { SelectLanguage } from './SelectLanguage'
 import logo from '../logo.svg'
+import { Footer } from './Footer'
 
 export function Base(props: { children: any }) {
   return (
-    <section className="min-h-screen bg-gray-50 ">
+    <section className="min-h-screen bg-gray-50">
       <header className="sticky top-0 bg-white shadow z-10">
         <div className="flex justify-between p-4 mx-auto max-w-7xl">
           <a
@@ -21,6 +22,7 @@ export function Base(props: { children: any }) {
         </div>
       </header>
       <main className="p-4 mx-auto max-w-7xl">{props.children}</main>
+      <Footer />
     </section>
   )
 }

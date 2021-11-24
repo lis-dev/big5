@@ -1,0 +1,12 @@
+.page .content h3,
+.page .content h4 {
+  font-size: 28px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.page p {
+  word-wrap: break-word;
+}

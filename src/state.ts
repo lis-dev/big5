@@ -1,3 +1,14 @@
 import { proxy } from 'valtio'
+import { Page } from './types'
 
-export const state = proxy({ lang: process.env.REACT_APP_DEFAULT_LANG || 'en' })
+type CommonState = {
+  lang: string
+  page?: Page
+}
+
+const stateObject: CommonState = {
+  lang: process.env.REACT_APP_DEFAULT_LANG || 'en',
+  page: undefined,
+}
+
+export const state = proxy(stateObject)

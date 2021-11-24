@@ -81,3 +81,33 @@ export class ResultObject {
     public result: Result
   ) {}
 }
+
+// TODO Move to another types file (pages)
+export type PageLinks = {
+  title: string
+  url: string
+}
+
+export class Page {
+  constructor(public title: string, public html: string) {}
+}
+
+// TODO Move to another types file (telegraph-response)
+export type TelegraphApiNodeElement = {
+  tag: string
+  attrs?: { [k: string]: string }
+  children: (TelegraphApiNodeElement | string)[]
+}
+
+export type TelegraphApiPageResponse = {
+  ok: 'true' | 'false'
+  result: {
+    author_name: string
+    content: TelegraphApiNodeElement[]
+    description: string
+    path: string
+    title: string
+    url: string
+    views: number
+  }
+}
