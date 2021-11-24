@@ -4,11 +4,14 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { Base } from './components/Base'
+import { ErrorBoundary } from './components/ErrorBoundary'
 
 ReactDOM.render(
   <React.StrictMode>
     <Base>
-      <App />
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
     </Base>
   </React.StrictMode>,
   document.getElementById('root')
